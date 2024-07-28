@@ -1,6 +1,10 @@
 # Smart-water-tap-using-rpi-and-android-application
 
-Smart water tap uses microprocessor i.e Rpi to control the tap(servo motor). An Android application is used to set the time which sends the data to the cloud. The could service used is Ubidots. The data is then fetched from the cloud by the RPI. Further at the particular time the tap is turned on and the ultrasonic sensor starts to take the reading. When the water is filled at a particular height the tap is turned off.
+The Smart Water Tap project employs a combination of hardware and software to create an efficient and automated water management system. At the heart of this system is a Raspberry Pi, which serves as the central microprocessor controlling the tap's servo motor. The servo motor enables precise control over the tap's opening and closing mechanisms.
+
+Users interact with the system through an Android application, which allows them to schedule when the tap should be turned on. The application sends this scheduling data to the cloud service Ubidots, which acts as an intermediary, ensuring that the Raspberry Pi receives the correct information. When the designated time arrives, the Raspberry Pi fetches the data from Ubidots and activates the tap.
+
+Simultaneously, an ultrasonic sensor begins monitoring the water level in the container. As the water fills the container, the sensor continuously measures the height of the water. Once the water reaches a pre-defined level, the Raspberry Pi signals the servo motor to turn off the tap, preventing overflow and conserving water. This integration of cloud computing, mobile technology, and sensor data ensures that water is dispensed efficiently and sustainably.
 
 # Requirements
 1. Raspberry Pi(RPI)
